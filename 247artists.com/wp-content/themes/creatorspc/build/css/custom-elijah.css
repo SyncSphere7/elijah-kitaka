@@ -259,4 +259,52 @@ a:focus {
     /* Don't override the parent .s__title positioning - let it inherit */
 }
 
+/* ========================================
+   ENERGETIC PERFORMANCES - CLEAN IMAGE GALLERY
+   Remove white card backgrounds, show only images scrolling up
+   ======================================== */
+
+/* Hide white background card wrapper */
+.s-features-home .sb-feature .sb__inner {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+/* Hide decorative border lines */
+.s-features-home .sb__side {
+    display: none !important;
+}
+
+/* Remove any card styling */
+.s-features-home .sb-feature {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Show only first image, hide second image */
+.s-features-home .sb__images--2 .sb__image:nth-child(2) {
+    display: none !important;
+}
+
+/* Make single image full width and centered */
+.s-features-home .sb__images {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+
+.s-features-home .sb__image {
+    width: 100% !important;
+    max-width: 720px !important;
+}
+
+.s-features-home .sb__image img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+}
+
+
 
