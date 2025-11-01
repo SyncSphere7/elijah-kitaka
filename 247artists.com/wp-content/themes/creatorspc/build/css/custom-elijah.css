@@ -1,0 +1,22 @@
+/* Custom CSS for Elijah Kitaka Site - Center Navigation */
+
+/* Center the desktop navigation menu */
+.site-head .s__bar .s__nav ul {
+    justify-content: center !important;
+}
+
+/* Adjust spacing for centered menu */
+.site-head .s__bar .s__nav {
+    flex-grow: 1;
+}
+
+/* Optional: Add more spacing between menu items for better balance */
+.site-head .s__bar .s__nav ul {
+    gap: 2.5rem !important;
+}
+
+@media only screen and (max-width: 1080px) {
+    .site-head .s__bar .s__nav ul {
+        gap: 2rem !important;
+    }
+}
