@@ -69,18 +69,27 @@ a:focus {
     color: #FF8C42 !important;
 }
 
-/* Button primary states - vibrant orange */
+/* Button primary states - navy blue text with orange effects */
 .btn-cta--primary {
-    background: #FF8C42 !important;
+    background: transparent !important;
     border-color: #FF8C42 !important;
-    color: #FFFFFF !important;
+    color: #1A2332 !important;
 }
 
 .btn-cta--primary:hover,
 .btn-cta--primary:focus {
-    background: #FF6B35 !important;
+    background: transparent !important;
     border-color: #FF6B35 !important;
-    color: #FFFFFF !important;
+    color: #1A2332 !important;
+}
+
+.btn-cta--primary .btn-cta__ruler {
+    background: #FF8C42 !important;
+}
+
+.btn-cta--primary:hover .btn-cta__ruler,
+.btn-cta--primary:focus .btn-cta__ruler {
+    background: #FF6B35 !important;
 }
 
 /* Navigation hover - orange */
@@ -194,4 +203,25 @@ a:focus {
     .site-head .s__bar .s__nav ul {
         gap: 2rem !important;
     }
+}
+
+/* ========================================
+   STICKY HEADER TRANSPARENCY
+   Remove white background and borders for floating Book Now button
+   ======================================== */
+
+/* Remove white background and borders from sticky header container */
+.site-head-home .s__bar {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Remove orange stripe decoration */
+.site-head-home .s__bar:after {
+    display: none !important;
+}
+
+/* Remove section divider borders */
+.site-head-home .s__bar > div {
+    border-right: none !important;
 }
