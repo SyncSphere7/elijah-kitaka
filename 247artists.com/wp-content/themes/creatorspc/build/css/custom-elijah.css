@@ -225,3 +225,38 @@ a:focus {
 .site-head-home .s__bar > div {
     border-right: none !important;
 }
+
+/* ========================================
+   ELIJAH KITAKA LOGO STYLING
+   Convert black logo to white with proper sizing
+   ======================================== */
+
+/* Make black logo appear white */
+.elijah-logo-white {
+    filter: brightness(0) invert(1) !important;
+    height: 40px !important;
+    width: auto !important;
+}
+
+/* Ensure logo maintains quality */
+.b__logo--elijah img {
+    image-rendering: -webkit-optimize-contrast !important;
+    image-rendering: crisp-edges !important;
+}
+
+/* ========================================
+   HERO LOGO IMAGE STYLING
+   Replace text with logo image matching original size and position
+   ======================================== */
+
+/* Hero logo image - match the original text size and inherit positioning */
+.hero-logo-image {
+    filter: brightness(0) invert(1) !important;
+    max-width: 8.5em !important;
+    width: auto !important;
+    height: auto !important;
+    display: block !important;
+    /* Don't override the parent .s__title positioning - let it inherit */
+}
+
+
