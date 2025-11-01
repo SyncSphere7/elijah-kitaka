@@ -84,4 +84,4 @@ All Elijah Kitaka media is organized in `/wp-content/uploads/2025/10/elijah-kita
 
 ---
 
-Built with ❤️ for independent artists who dream big.
+Built by SyncSphere

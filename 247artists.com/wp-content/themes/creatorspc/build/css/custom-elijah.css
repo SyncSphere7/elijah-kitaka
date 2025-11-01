@@ -1,4 +1,179 @@
-/* Custom CSS for Elijah Kitaka Site - Center Navigation */
+/* Custom CSS for Elijah Kitaka Site - Vibrant Afro-Soul Brand Colors */
+
+/* ========================================
+   ELIJAH KITAKA COLOR PALETTE
+   "Vibrant Afro-Soul" - Stage Energy & Depth
+   ======================================== */
+
+:root {
+    /* Primary Backgrounds */
+    --color-white: #FFFFFF !important;           /* Clean white background */
+    --color-black: #1A2332 !important;           /* Deep blue-black (stage depth) */
+    --color-black-light: #2A3442 !important;     /* Lighter blue-black */
+    --color-gray: #F5F5F5 !important;            /* Light gray for sections */
+    --color-gray-dark: #4A5568 !important;       /* Slate gray for depth */
+    
+    /* Elijah Kitaka Brand Colors - Vibrant Performance */
+    --color-brand-primary: #FF8C42 !important;   /* Vibrant orange - Main brand */
+    --color-brand-accent: #FFD93D !important;    /* Golden yellow - Stage lights */
+    --color-brand-energy: #FF6B35 !important;    /* Coral red - High energy */
+    --color-brand-depth: #1A2332 !important;     /* Deep blue-black - Soul depth */
+    --color-brand-hover: #FFA968 !important;     /* Light orange hover */
+    
+    /* Updated Brand Swaps - Stage Performance Theme */
+    --color-brand-1: #FF8C42 !important;         /* Vibrant orange (was pink) */
+    --color-brand-2: #FF6B35 !important;         /* Coral red (was red) */
+    --color-brand-3: #FFD93D !important;         /* Golden yellow (was yellow) */
+    --color-brand-4: #FF8C42 !important;         /* Orange (was purple) */
+    --color-brand-5: #FFE999 !important;         /* Light yellow (was bright yellow) */
+    --color-brand-6: #FFD0A6 !important;         /* Peach (was lavender) */
+    --color-brand-7: #FFD93D !important;         /* Golden yellow (was lime) */
+    --color-brand-8: #FFA968 !important;         /* Light orange */
+    --color-brand-9: #FFB380 !important;         /* Soft peach */
+    --color-brand-10: #FFF8E7 !important;        /* Cream yellow */
+    --color-brand-11: #FFD93D !important;        /* Golden yellow (was green) */
+    --color-brand-12: #1A2332 !important;        /* Deep blue-black (was purple) */
+    
+    /* Text Colors */
+    --color-heading: #1A2332 !important;         /* Deep blue-black headings */
+    --color-text: #1A2332 !important;            /* Deep blue-black body text */
+}
+
+/* Selection color - vibrant orange */
+::-moz-selection {
+    background: #FF8C42 !important;
+    color: #FFFFFF !important;
+}
+
+::selection {
+    background: #FF8C42 !important;
+    color: #FFFFFF !important;
+}
+
+/* Background adjustments */
+html {
+    background: #FFFFFF !important;
+}
+
+body {
+    background: #FFFFFF !important;
+}
+
+/* Link colors - orange energy */
+a {
+    color: #1A2332 !important;
+}
+
+a:hover,
+a:focus {
+    color: #FF8C42 !important;
+}
+
+/* Button primary states - vibrant orange */
+.btn-cta--primary {
+    background: #FF8C42 !important;
+    border-color: #FF8C42 !important;
+    color: #FFFFFF !important;
+}
+
+.btn-cta--primary:hover,
+.btn-cta--primary:focus {
+    background: #FF6B35 !important;
+    border-color: #FF6B35 !important;
+    color: #FFFFFF !important;
+}
+
+/* Navigation hover - orange */
+.site-head .s__nav a:hover,
+.site-head .s__nav a:focus {
+    color: #FF8C42 !important;
+}
+
+/* Social icons hover - golden yellow */
+.b-socials a:hover,
+.b-socials a:focus {
+    color: #FFD93D !important;
+}
+
+/* Labels/Tags - stage lights theme */
+.t-label {
+    background: #FFD93D !important;
+    color: #1A2332 !important;
+}
+
+.t-label--education {
+    background: #FF8C42 !important;
+    color: #FFFFFF !important;
+}
+
+.t-label--technology {
+    background: #FFD93D !important;
+    color: #1A2332 !important;
+}
+
+.t-label--network {
+    background: #FF6B35 !important;
+    color: #FFFFFF !important;
+}
+
+/* Cookie consent - orange energy */
+.icr-cc {
+    background: #FF8C42 !important;
+}
+
+.icr-cc__btn--accept {
+    background: #1A2332 !important;
+    border-color: #1A2332 !important;
+    color: #FFFFFF !important;
+}
+
+.icr-cc__btn--accept:hover,
+.icr-cc__btn--accept:focus {
+    background: #FFD93D !important;
+    border-color: #FFD93D !important;
+    color: #1A2332 !important;
+}
+
+/* Section backgrounds - subtle variations */
+.s-about-home,
+.s-message-home {
+    background: #FFFFFF !important;
+}
+
+/* Footer - deep blue-black depth */
+.site-foot {
+    background: #1A2332 !important;
+    color: #FFFFFF !important;
+}
+
+.site-foot a {
+    color: #FFFFFF !important;
+}
+
+.site-foot a:hover {
+    color: #FFD93D !important;
+}
+
+/* Header - clean white with blue-black text */
+.site-head {
+    background: #FFFFFF !important;
+    color: #1A2332 !important;
+}
+
+/* Buttons outline style */
+.btn-simple--outline {
+    border-color: #FF8C42 !important;
+    color: #FF8C42 !important;
+}
+
+.btn-simple--outline:hover {
+    background: #FF8C42 !important;
+    color: #FFFFFF !important;
+}
+
+/* ========================================
+   NAVIGATION CENTERING (Original)
+   ======================================== */
 
 /* Center the desktop navigation menu */
 .site-head .s__bar .s__nav ul {
