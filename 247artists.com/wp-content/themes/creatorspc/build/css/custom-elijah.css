@@ -98,10 +98,20 @@ a:focus {
     color: #FF8C42 !important;
 }
 
-/* Social icons hover - golden yellow */
+/* Social icons - navy blue like text color */
+.b-socials a {
+    color: #1A2332 !important; /* Navy blue - matches main text */
+}
+
 .b-socials a:hover,
 .b-socials a:focus {
-    color: #FFD93D !important;
+    color: #1A2332 !important; /* Keep navy blue on hover */
+}
+
+/* Remove any blue borders around social icons */
+.a-social,
+.a-social__icon {
+    border: none !important;
 }
 
 /* Labels/Tags - stage lights theme */
@@ -288,6 +298,53 @@ a:focus {
     display: none !important;
 }
 
+/* ========================================
+   CONTACT BUTTON - TRANSPARENT WITH ORANGE TEXT
+   Match Book Now button style - no background, just text
+   ======================================== */
+
+/* Remove white background and border from entire header bar on Legal Notice page */
+.site-head .s__bar {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Remove white container background and border from links section */
+.site-head .s__links {
+    background: transparent !important;
+    border: none !important;
+    border-right: none !important;
+    box-shadow: none !important;
+}
+
+/* Make Contact button transparent with orange text */
+.btn-simple--outline,
+.s__links__btn.btn-simple--outline {
+    background: transparent !important;
+    color: #FF8C42 !important; /* Orange text */
+    border: 2px solid #FF8C42 !important; /* Orange border */
+    padding: 12px 24px !important;
+    border-radius: 8px !important;
+}
+
+/* Hover effect - switch to blue */
+.btn-simple--outline:hover,
+.s__links__btn.btn-simple--outline:hover {
+    background: transparent !important;
+    border-color: #6EC1E4 !important; /* Light blue border */
+    color: #6EC1E4 !important; /* Light blue text */
+}
+
+/* Inner span styling */
+.btn-simple--outline .btn-simple__inner {
+    color: inherit !important;
+}
+
+/* Remove the ::before pseudo-element border from btn-simple */
+.btn-simple--outline:before {
+    display: none !important;
+}
+
 /* Make single image full width and centered */
 .s-features-home .sb__images {
     display: flex !important;
@@ -305,6 +362,30 @@ a:focus {
     height: auto !important;
     border-radius: 8px !important;
 }
+
+/* ========================================
+   LEGAL NOTICE PAGE - REDUCE TOP SPACING
+   Remove excessive top padding since we deleted the header
+   ======================================== */
+.l-page {
+    padding-top: 3rem !important; /* Reduced from 27.944rem */
+}
+
+/* ========================================
+   BACK TO HOME LINK - LEGAL NOTICE PAGE
+   Navy blue, no hover effects
+   ======================================== */
+.l__wrapper a[href*="index.html"] {
+    color: #1A2332 !important;
+    text-decoration: none !important;
+}
+
+.l__wrapper a[href*="index.html"]:hover {
+    color: #1A2332 !important; /* Stay navy blue on hover */
+    text-decoration: none !important; /* No underline */
+}
+
+
 
 
 
