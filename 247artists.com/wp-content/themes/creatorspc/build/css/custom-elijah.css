@@ -134,21 +134,31 @@ a:focus {
     margin: 0;
 }
 
-.a-social__icon {
-    width: 28px;
-    height: 28px;
-    display: inline-block;
+/* Ensure .a-social has proper display and sizing */
+.site-foot .b__socials .a-social {
+    --icon-size: 1.6666rem; /* ~26px - visible size for footer */
+    display: block;
 }
 
-/* Mobile responsive: smaller icons and wrap to two rows */
+.a-social__icon {
+    position: relative;
+    display: block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    /* Critical: Use CSS mask to display SVG icons */
+    background: currentcolor;
+    -webkit-mask: var(--icon) center/cover no-repeat;
+    mask: var(--icon) center/cover no-repeat;
+}
+
+/* Mobile responsive: smaller icons and tighter spacing */
 @media (max-width: 768px) {
     .b-socials {
         gap: 0.8rem; /* 12px on mobile */
     }
     
-    .a-social__icon {
-        width: 22px;
-        height: 22px;
+    .site-foot .b__socials .a-social {
+        --icon-size: 1.388rem; /* ~22px on mobile */
     }
 }
 
@@ -300,11 +310,33 @@ a:focus {
 /* Hero logo image - match the original text size and inherit positioning */
 .hero-logo-image {
     filter: brightness(0) invert(1) !important;
-    max-width: 8.5em !important;
-    width: auto !important;
+    max-width: 100% !important;
+    width: 100% !important;
     height: auto !important;
     display: block !important;
     /* Don't override the parent .s__title positioning - let it inherit */
+}
+
+/* Mobile logo responsive sizing */
+@media only screen and (max-width: 767px) {
+    .s-hero-home .s__title {
+        max-width: 90vw !important; /* Use viewport width instead of em */
+    }
+    
+    .hero-logo-image {
+        max-width: 90vw !important;
+        width: auto !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .s-hero-home .s__title {
+        max-width: 85vw !important;
+    }
+    
+    .hero-logo-image {
+        max-width: 85vw !important;
+    }
 }
 
 /* ========================================
