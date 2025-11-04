@@ -98,20 +98,58 @@ a:focus {
     color: #FF8C42 !important;
 }
 
-/* Social icons - navy blue like text color */
+/* Social icons - context-aware colors */
+/* Default: navy blue for light backgrounds */
 .b-socials a {
-    color: #1A2332 !important; /* Navy blue - matches main text */
+    color: #1A2332 !important;
+}
+
+/* Footer: white icons on navy background */
+.site-foot .b-socials a {
+    color: #FFFFFF !important;
 }
 
 .b-socials a:hover,
 .b-socials a:focus {
-    color: #1A2332 !important; /* Keep navy blue on hover */
+    color: inherit !important; /* No color change on hover - static */
 }
 
-/* Remove any blue borders around social icons */
+/* Remove any borders around social icons */
 .a-social,
 .a-social__icon {
     border: none !important;
+}
+
+/* Social icon sizing and spacing */
+.b-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* 16px spacing between icons */
+    align-items: center;
+    justify-content: center;
+}
+
+.b-socials li {
+    list-style: none;
+    margin: 0;
+}
+
+.a-social__icon {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+}
+
+/* Mobile responsive: smaller icons and wrap to two rows */
+@media (max-width: 768px) {
+    .b-socials {
+        gap: 0.8rem; /* 12px on mobile */
+    }
+    
+    .a-social__icon {
+        width: 22px;
+        height: 22px;
+    }
 }
 
 /* Labels/Tags - stage lights theme */
